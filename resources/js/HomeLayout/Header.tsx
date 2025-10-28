@@ -618,6 +618,35 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // typing text banner
+  const texts = ["Web Development", "Mobile Application", "ERP Solution" , "CRM Solution","UI/UX","Digital marketing", "Tech consultation"];
+  const [text, setText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+
+  useEffect(() => {
+    const current = texts[index];
+    let speed = deleting ? 60 : 120;
+
+    const typing = setTimeout(() => {
+      if (!deleting && charIndex < current.length) {
+        setText(current.slice(0, charIndex + 1));
+        setCharIndex(charIndex + 1);
+      } else if (deleting && charIndex > 0) {
+        setText(current.slice(0, charIndex - 1));
+        setCharIndex(charIndex - 1);
+      } else if (!deleting && charIndex === current.length) {
+        setTimeout(() => setDeleting(true), 1000);
+      } else if (deleting && charIndex === 0) {
+        setDeleting(false);
+        setIndex((index + 1) % texts.length);
+      }
+    }, speed);
+
+    return () => clearTimeout(typing);
+  }, [charIndex, deleting, index, texts]);
+
   return (
     <header className="headerBg">
       {/* navbar */}
@@ -810,8 +839,7 @@ const Header = () => {
               </h5>
               <h1 className="text-description">
                 Complete Digital Solutions <br />
-                for{" "}
-                <span className="text-description-span">Web Development</span>
+                for <span className="text-description-span">{text}</span>
               </h1>
             </div>
             <div className="btnToolbar">

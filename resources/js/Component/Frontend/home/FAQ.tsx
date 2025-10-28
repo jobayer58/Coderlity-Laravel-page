@@ -27,6 +27,11 @@ const FAQ = () => {
       description:
         "Reliable and secure hosting solutions to keep your website online and performing at its best all the time.",
     },
+    {
+      title: "How do I get started with Coderlity?",
+      description:
+        "Reliable and secure hosting solutions to keep your website online and performing at its best all the time.",
+    },
   ];
 
   const toggleService = (index: any) => {
