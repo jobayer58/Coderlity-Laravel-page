@@ -1,0 +1,38 @@
+.technologies-section {
+    text-align: center;
+    background: #F5F6F9;
+    padding: 80px 80px;
+}
+
+.technologies-parent {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.technologies-parent > * {
+    flex: 0 0 calc(16.666% - 20px); /* 6 items per row */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies-div{
+    display: grid;
+    gap: 10px;
+}
+
+.technologies-icon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    box-shadow:
+        0 0 1px rgba(0, 0, 0, 0.25),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+}

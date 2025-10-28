@@ -1,0 +1,44 @@
+.customPadding {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.customPaddingLi {
+  padding: 5px 5px 5px 13px !important;
+}
+.form-select:focus {
+  box-shadow: none !important;
+}
+.dropdown-toggle::after {
+  font-size: 20px !important;
+  line-height: 20px !important;
+}
+.cTogglePadding {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.customform-select {
+  padding-left: 0.6rem !important;
+}
+.changebgcolor {
+  margin-right: 10px !important;
+}
+
+.options-flagimgTwo {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 3px !important;
+}
+.customfontsize {
+  font-size: 11px !important;
+}
+
+.passwordicon {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.dropdownstop {
+  cursor: text !important;
+}

@@ -1,0 +1,1 @@
+import{j as s,x as a}from"./app-CWG8IO2g.js";function n({message:e}){return s.jsxs("div",{className:"",children:[s.jsx("h1",{className:"",children:"429"}),s.jsx("p",{className:"",children:e}),s.jsx(a,{href:route("user.dashboard.login"),children:"Back"})]})}export{n as default};

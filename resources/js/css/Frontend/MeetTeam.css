@@ -1,0 +1,205 @@
+.meet-section {
+  padding: 0px 80px;
+  margin-bottom: -12%;
+  position: relative;
+}
+
+.meet-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 30px;
+  padding: 0px 0px;
+  gap: 20px;
+  background: #C0E1FF;
+}
+
+.meet-left {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.meet-right {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.meet-text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.meet-div h1 {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.meet-div p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #777C82;
+}
+
+/* btn */
+.meet-team {
+  background: #1E6FFF;
+  color: white;
+  font: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow:
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.meet-team:hover {
+  background: #E9EAF0;
+  color: black;
+  box-shadow:
+    6px 6px 12px 0px rgba(189, 200, 223, 0.7),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.7);
+
+}
+
+.meet-team span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+
+
+/*  */
+.meet-btn-div {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.meet-btn {
+  background-color: #0088FF;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 40px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+  order: 1;
+}
+
+.meet-btn-icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: #0088FF;
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  order: 2;
+}
+
+.meet-icon {
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects - Icon moves to left, button moves to right */
+.meet-btn-div:hover .meet-btn {
+  transform: translateX(44px);
+}
+
+.meet-btn-div:hover .meet-btn-icon-div {
+  transform: translateX(-199px);
+  border-radius: 40px;
+}
+
+/* For better visual effect */
+.meet-btn-div {
+  perspective: 1000px;
+}
+
+/* ✅ RESPONSIVE STYLES */
+@media (max-width: 1124px) {
+  .meet-section {
+    padding: 0px 40px;
+  }
+
+  .meet-div {
+    padding: 20px 30px;
+  }
+
+  .meet-btn {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+
+  .meet-btn-icon-div {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .meet-section {
+    padding: 0px 30px;
+  }
+
+  .meet-div {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .meet-btn-div {
+    justify-content: center;
+  }
+
+  .meet-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+
+  .meet-btn-icon-div {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .meet-section {
+    padding: 0px 20px;
+  }
+
+  .meet-div {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .meet-btn {
+    padding: 9px 20px;
+    font-size: 13px;
+  }
+
+  .meet-btn-icon-div {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}

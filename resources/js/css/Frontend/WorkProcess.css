@@ -1,0 +1,297 @@
+.work-process-section {
+  background-color: #d8edff;
+  padding: 70px 80px;
+}
+.work-text {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.work-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.process-parent {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  position: relative;
+}
+
+.process-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Process Images */
+.process-img1,
+.process-img2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 90px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.process-img1 {
+  background-color: #10172e;
+}
+
+.process-img2 {
+  background-color: #0088ff;
+}
+
+.process-img1:hover,
+.process-img2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.process-text {
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px 24px;
+}
+
+.process-text h1 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #2a2a2a;
+  margin-bottom: 12px;
+}
+
+.process-text p {
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* ANIMATION CONTROL VARIABLES - Eta change korlei sob change hobe */
+:root {
+  /* Line er length control */
+  --line-start: 12%; /* Line shuru  hobe */
+  --line-end: 86%; /* Line shesh  hobe */
+
+  /* Dot er speed control */
+  --animation-duration: 14s; /* Dot er speed  */
+
+  /* Dot er size control */
+  --dot-size: 12px; /* Dot er boro soto */
+
+  /* Line er style control */
+  --line-color: #0088ff;
+  --line-height: 2px;
+  --dot-glow: 0 0 15px rgba(0, 136, 255, 0.8);
+}
+
+/* Animated Connecting Line -  variable use  */
+.process-parent::before {
+  content: "";
+  position: absolute;
+  top: 95px;
+  left: var(--line-start);
+  right: calc(100% - var(--line-end));
+  height: var(--line-height);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--line-color),
+    var(--line-color) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  z-index: 1;
+}
+
+/* Moving Dot Animation -  variable use  */
+.process-parent::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: var(--line-start);
+  width: var(--dot-size);
+  height: var(--dot-size);
+  background: var(--line-color);
+  border-radius: 50%;
+  z-index: 2;
+  animation: moveThroughProcess var(--animation-duration) linear infinite;
+  box-shadow: var(--dot-glow);
+}
+
+/* Dot movement positions - Automatically calculate based on line length */
+@keyframes moveThroughProcess {
+  0% {
+    left: var(--line-start);
+    transform: scale(1);
+  }
+  12.5% {
+    left: var(--line-start);
+    transform: scale(1.3);
+  }
+  25% {
+    left: calc(
+      var(--line-start) + (var(--line-end) - var(--line-start)) * 0.33
+    );
+    transform: scale(1);
+  }
+  37.5% {
+    left: calc(
+      var(--line-start) + (var(--line-end) - var(--line-start)) * 0.33
+    );
+    transform: scale(1.3);
+  }
+  50% {
+    left: calc(
+      var(--line-start) + (var(--line-end) - var(--line-start)) * 0.66
+    );
+    transform: scale(1);
+  }
+  62.5% {
+    left: calc(
+      var(--line-start) + (var(--line-end) - var(--line-start)) * 0.66
+    );
+    transform: scale(1.3);
+  }
+  75% {
+    left: var(--line-end);
+    transform: scale(1);
+  }
+  87.5% {
+    left: var(--line-end);
+    transform: scale(1.3);
+  }
+  100% {
+    left: var(--line-end);
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+
+/* Tablet Devices (768px - 991px) */
+@media (max-width: 991px) {
+  .work-process-section {
+    padding: 60px 40px;
+  }
+
+  .work-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .work-text p {
+    font-size: 1rem;
+  }
+
+  .process-parent::before {
+    left: 20%;
+    right: 20%;
+  }
+
+  @keyframes moveThroughProcess {
+    0% {
+      left: 20%;
+    }
+    25% {
+      left: 40%;
+    }
+    50% {
+      left: 60%;
+    }
+    75% {
+      left: 80%;
+    }
+    100% {
+      left: 80%;
+    }
+  }
+}
+
+/* Mobile Devices (576px - 767px) */
+@media (max-width: 767px) {
+  .process-parent {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  /* Mobile e vertical line */
+  .process-parent::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: var(--line-height);
+    height: 100%;
+    background: repeating-linear-gradient(
+      180deg,
+      var(--line-color),
+      var(--line-color) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+    transform: translateX(-50%);
+  }
+
+  .process-parent::after {
+    top: 0;
+    left: 50%;
+    width: var(--dot-size);
+    height: var(--dot-size);
+    transform: translateX(-50%);
+    animation: moveThroughProcessVertical var(--animation-duration) linear
+      infinite;
+  }
+
+  @keyframes moveThroughProcessVertical {
+    0% {
+      top: 0;
+      transform: translateX(-50%) scale(1);
+    }
+    12.5% {
+      top: 0;
+      transform: translateX(-50%) scale(1.3);
+    }
+    25% {
+      top: 25%;
+      transform: translateX(-50%) scale(1);
+    }
+    37.5% {
+      top: 25%;
+      transform: translateX(-50%) scale(1.3);
+    }
+    50% {
+      top: 50%;
+      transform: translateX(-50%) scale(1);
+    }
+    62.5% {
+      top: 50%;
+      transform: translateX(-50%) scale(1.3);
+    }
+    75% {
+      top: 75%;
+      transform: translateX(-50%) scale(1);
+    }
+    87.5% {
+      top: 75%;
+      transform: translateX(-50%) scale(1.3);
+    }
+    100% {
+      top: 100%;
+      transform: translateX(-50%) scale(1);
+    }
+  }
+}
+@media (max-width: 1299px) {
+  .process-text p {
+    font-size: 12px;
+  }
+}

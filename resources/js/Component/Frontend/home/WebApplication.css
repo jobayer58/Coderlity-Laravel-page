@@ -1,0 +1,215 @@
+.webapp-parent-row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 80px;
+    padding: 0px 90px;
+}
+.webapp-image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 444px ;
+    height: 444px ;
+    object-fit: cover;
+}
+
+.webapp-image {
+    
+    /* border: 1px solid red; */
+}
+
+.webapp-content {
+    /* padding-right: 30px; */
+    /* border: 1px solid red; */
+}
+
+.webapp-title {
+    text-align: start;
+    font-size: 43px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.webapp-description {
+    color: #555555;
+    text-align: start;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #54AFFF;
+    font-weight: 600;
+}
+.webapp-features{
+    display: flex;
+    gap: 14px;
+}
+
+.webapp-features p {
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.icon {
+    color: white;
+    background-color: #1E6FFF;
+    margin-right: 8px;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+.webapp-buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.start-btn {
+    background-color: #0088FF;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    box-shadow: 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.start-btn:hover {
+    background-color: #0056b3;
+}
+
+.case-btn {
+    color: #0F1724;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 15px;
+    background-color: #E9EAF0;
+    box-shadow: 
+    6px 6px 12px 0px rgba(189, 200, 223, 0.7),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.7);
+}
+
+.case-btn:hover {
+    text-decoration: underline;
+}
+
+.webapp-features p {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* ✅ Responsive */
+@media (max-width: 991px) {
+    .webapp-title {
+        font-size: 24px;
+    }
+
+    .webapp-content {
+        padding-left: 18px;
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    .webapp-features {
+        /* justify-content: center; */
+        text-align: start;
+        font-size: 14px;
+    }
+
+    .webapp-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .case-btn {
+        margin-left: 0;
+    }
+}
+
+
+
+/* 📲 Tablet (601px - 991px) */
+@media (min-width: 601px) and (max-width: 991px) {
+    .webapp-parent-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .webapp-content {
+        padding: 0px;
+    }
+
+    .webapp-title {
+        text-align: center;
+        padding: 0px;
+
+    }
+
+    .webapp-description {
+        font-size: 14px;
+        text-align: center;
+        padding: 0px;
+
+    }
+
+    .webapp-features p {
+        text-align: start;
+        font-size: 9px;
+    }
+
+}
+
+/* 💻 Laptop (992px - 1280px) */
+@media (min-width: 992px) and (max-width: 1280px) {
+
+    .webapp-image {
+        height: 200px;
+    }
+
+    .webapp-title {
+        font-size: 24px;
+
+    }
+
+    .webapp-description {
+        font-size: 14px;
+
+    }
+
+    .webapp-features p {
+        display: flex;
+        text-align: start;
+        font-size: 10px;
+        
+    }
+
+    .start-btn {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .case-btn {
+        font-size: 14px;
+    }
+}

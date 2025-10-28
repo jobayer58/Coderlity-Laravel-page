@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.pagefont {
+  font-family: "Poppins", sans-serif;
+}
+
+.passwordicon {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}

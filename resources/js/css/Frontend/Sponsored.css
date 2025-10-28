@@ -1,0 +1,61 @@
+/* ✅ Section background */
+.sponsored-section {
+  background-color: #fafafa;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+
+/* ✅ Container setup */
+.sponsored-container {
+  padding: 25px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Row setup */
+.sponsored-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: nowrap !important;
+  white-space: nowrap;
+}
+
+/* ✅ Image styling */
+.sponsored-section img {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sponsored-section img:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ Responsive breakpoints */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .sponsored-row {
+    gap: 40px; /* ট্যাবলেটে গ্যাপ কমানো হলো */
+  }
+
+  .sponsored-section img {
+    max-height: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sponsored-row {
+    gap: 0px; /* 🔥 ছোট স্ক্রিনে এখন ঠিক spacing থাকবে */
+  }
+
+  .sponsored-section img {
+    max-height: 45px; /* image ছোট */
+  }
+}

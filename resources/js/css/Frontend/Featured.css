@@ -1,0 +1,146 @@
+.featured-section {
+  padding: 40px 80px;
+  background-color: #f5f6f9;
+}
+
+.featured-text {
+  text-align: center;
+}
+.featured-text-title {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0px;
+  background: #0f1724;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.featured-text-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  /* text er niche 20px */
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px;
+  border-radius: 50px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(30, 111, 255, 0.3) 25%,
+    rgba(30, 111, 255, 1) 50%,
+    rgba(30, 111, 255, 0.3) 75%,
+    transparent 100%
+  );
+  animation: flowFromSides 6s ease-in-out infinite;
+}
+
+/* smooth from both sides to center */
+@keyframes flowFromSides {
+  0% {
+    width: 0%;
+    opacity: 0.3;
+  }
+
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 0%;
+    opacity: 0.3;
+  }
+}
+
+.featured-text p {
+  margin-top: 40px;
+  color: #777c82;
+}
+/* card */
+.featured-card-parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+/* প্রথম লাইন */
+.featured-card-div1 {
+  grid-column: span 3;
+}
+
+.featured-card-div2 {
+  grid-column: span 2;
+}
+
+/* দ্বিতীয় লাইন */
+.featured-card-div3 {
+  grid-column: span 2;
+}
+
+.featured-card-div4 {
+  grid-column: span 3;
+}
+
+/* প্রতিটি কার্ডের স্টাইল */
+.featured-card-div1,
+.featured-card-div2,
+.featured-card-div3,
+.featured-card-div4 {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 6px 6px 12px rgba(189, 200, 223, 0.7),
+    -6px -6px 12px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #e8f4ff;
+}
+
+.featured-img img {
+  width: auto;
+  height: 275px;
+  object-fit: cover;
+}
+
+.featured-content-text {
+  text-align: center;
+  margin-top: 10px;
+}
+.featured-content-text h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e6fff;
+  margin-bottom: 8px;
+}
+
+.featured-content-text p {
+  font-size: 14px;
+  color: #777c82;
+  margin-top: 10px;
+}
+
+/* Responsive (mobile এ এক কলামে দেখাবে) */
+@media (max-width: 768px) {
+  .featured-card-parent {
+    grid-template-columns: 1fr;
+  }
+  .featured-card-div1,
+  .featured-card-div2,
+  .featured-card-div3,
+  .featured-card-div4 {
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,156 @@
+.pricing-section {
+    /* padding: 60px 0; */
+}
+
+/* ✅ Container setup */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* gap between cards */
+}
+
+/* ✅ Card styling */
+.pricing-card {
+    width: 250px;
+    height: 420px;
+    border: none;
+    border-radius: 24px;
+    background-color: #1E6FFF1A;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 
+    6px 6px 12px 0px rgba(189, 200, 223, 0.7),
+    -6px -6px 12px 0px rgba(255, 255, 255, 0.7);
+}
+
+
+/* ✅ Inner content */
+.pricing-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-align: start;
+}
+
+.pricing-divider {
+    width: 100%;
+    height: 2px;
+    background: #1E6FFF33;
+    margin-bottom: 16px;
+}
+
+.pricing-price {
+    text-align: start;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pricing-subtitle {
+    text-align: start;
+    color: #777C82;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pricing-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 0px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    box-shadow: 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.pricing-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #2A2A2A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pricing-icon {
+    color: #1E6FFF;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.pricing-footer {
+    text-align: start;
+    color: #555555;
+    font-size: 11px;
+    margin-top: 35px;
+}
+
+
+/* ✅ Responsive Design */
+
+/* 📱 Mobile (up to 600px) */
+@media (max-width: 600px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .pricing-price {
+        font-size: 24px;
+    }
+
+    .pricing-btn {
+        width: 100%;
+    }
+}
+
+/* 📲 Tablet (601px - 991px) */
+@media (min-width: 601px) and (max-width: 991px) {
+    .pricing-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 280px;
+        height: 380px;
+    }
+
+    .pricing-title {
+        font-size: 1rem;
+    }
+
+    .pricing-price {
+        font-size: 26px;
+    }
+}
+
+/* 💻 Laptop (992px - 1280px) */
+@media (min-width: 992px) and (max-width: 1280px) {
+    .pricing-container {
+        gap: 20px;
+    }
+
+}

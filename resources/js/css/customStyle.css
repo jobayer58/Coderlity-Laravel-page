@@ -1,0 +1,25 @@
+.search-box-custom-width {
+  width: 360px;
+  position: relative;
+}
+
+.pagination .page-item .page-link {
+  border-radius: 0 !important;
+}
+
+.Toastify__close-button {
+  color: #333333 !important;
+}
+
+.Toastify__close-button:hover {
+  color: #1f2937 !important;
+}
+
+.close-cl-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  cursor: pointer;
+}
