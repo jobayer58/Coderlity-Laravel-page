@@ -3,6 +3,8 @@
   background-color: #fafafa;
   overflow: hidden;
   padding: 20px 0px;
+  max-width: 1520px;
+  margin: auto;
 }
 
 /* ✅ Container setup */

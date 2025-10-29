@@ -27,15 +27,15 @@ const UXDesign = () => {
                                 {/* Features */}
                                 <div className="webapp-features">
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" />User-Centric Research
+                                        <p><IoIosCheckmark className="webapp-features-icon" />User-Centric Research
                                         </p>
-                                        <p><IoIosCheckmark className="icon" />Pixel-Perfect UI Design & Branding</p>
-                                        <p><IoIosCheckmark className="icon" />Conversion-Focused Wireframing</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Pixel-Perfect UI Design & Branding</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Conversion-Focused Wireframing</p>
                                     </div>
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" />Interactive Prototypes (Figma/Sketch)</p>
-                                        <p><IoIosCheckmark className="icon" />Accessibility & Performance Audits</p>
-                                        <p><IoIosCheckmark className="icon" />Design System Creation & Handoff</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Interactive Prototypes (Figma/Sketch)</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Accessibility & Performance Audits</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Design System Creation & Handoff</p>
                                     </div>
                                 </div>
 

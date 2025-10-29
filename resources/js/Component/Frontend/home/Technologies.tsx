@@ -24,7 +24,8 @@ import WPBakery from '../../../../images/frontend/WPBakery.png'
 const Technologies = () => {
     return (
         <section className='technologies-section'>
-            <h2 className="timeline-title">Technologies we work With</h2>
+            <div className='all-section-width'>
+                <h2 className="timeline-title">Technologies we work With</h2>
             <p className="timeline-subtitle">
                 At our company, we work with the latest technologies to deliver innovative, secure, and high- <br /> performing solutions. Our expertise includes web, mobile, cloud, AI, and blockchain development for <br /> modern businesses.
             </p>
@@ -155,6 +156,7 @@ const Technologies = () => {
                     </div>
                     <p>WPBakery</p>
                 </div>
+            </div>
             </div>
         </section>
     );

@@ -1,5 +1,6 @@
 .domain-section {
   border-radius: 10px;
+  position: relative;
 }
 .banner-text-gradient {
   display: flex;
@@ -66,8 +67,10 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 1080px;
-  margin: 0px 80px;
+  top: 300px;
+  /* margin: 0px 80px; */
+  max-width: 1350px;
+  margin: auto;
   background-color: #E9EAF0;
   border-radius: 16px;
   box-shadow: 

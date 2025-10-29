@@ -1,7 +1,7 @@
 .timeline-section {
   text-align: center;
   background: #F5F6F9;
-  padding: 80px 80px;
+  padding: 40px 0px;
 }
 
 .timeline-title {
@@ -77,9 +77,11 @@
 
 /* idea sucess */
 .work-step-container {
-  display: flex;
-  gap: 0px;
+  /* display: flex;
+  gap: 0px; */
   /* height: 150px; */
+  /* position: absolute; */
+  position: relative;
 }
 
 .work-step {
@@ -90,36 +92,40 @@
   position: absolute;
 }
 
-.work-step:nth-child(1) {
-  top: 5400px;
-}
+/* .work-step:nth-child(1) {
+  top: 0px;
+} */
 .work-step:nth-child(2) {
-  top: 5750px;
-  left: 295px;
+  top: -80px;
+  left: 0px;
 }
 .work-step:nth-child(3) {
-  top: 5400px;
-  left: 440px;
+  top: 260px;
+  left: 210px;
 }
 .work-step:nth-child(4) {
-  top: 5750px;
-  left: 595px;
+  top: -80px;
+  left: 360px;
 }
 .work-step:nth-child(5) {
-  top: 5400px;
-  left: 740px;
+  top: 260px;
+  left: 510px;
 }
 .work-step:nth-child(6) {
-  top: 5750px;
-  left: 900px;
+  top: -80px;
+  left: 660px;
 }
 .work-step:nth-child(7) {
-  top: 5400px;
-  left: 1050px;
+  top: 260px;
+  left: 810px;
 }
 .work-step:nth-child(8) {
-  top: 5750px;
-  left: 1270px;
+  top: -80px;
+  right: 210px;
+}
+.work-step:nth-child(9) {
+  top: 260px;
+  right: 10px;
 }
 
 /* Label part */

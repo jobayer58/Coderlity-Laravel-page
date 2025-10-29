@@ -840,6 +840,7 @@ const Header = () => {
               <h1 className="text-description">
                 Complete Digital Solutions <br />
                 for <span className="text-description-span">{text}</span>
+                <span className="cursor">|</span>
               </h1>
             </div>
             <div className="btnToolbar">

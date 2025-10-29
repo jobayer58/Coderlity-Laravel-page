@@ -55,7 +55,8 @@ const DigitalSolution = () => {
   };
   return (
     <section className="solution-section">
-      <div className="solution-parent">
+      <div className="all-section-width">
+        <div className="solution-parent">
         <div className="solution-img-div">
           <div>
             <img src={digital} alt="" />
@@ -95,6 +96,7 @@ const DigitalSolution = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

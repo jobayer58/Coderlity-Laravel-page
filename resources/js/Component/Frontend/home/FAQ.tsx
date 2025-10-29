@@ -39,7 +39,8 @@ const FAQ = () => {
   };
   return (
     <section className="faq-section">
-      <div className="faq-parent">
+      <div className="all-section-width">
+        <div className="faq-parent">
         <div className="faq-text-div">
           <div>
             <h1 className="blogs-title">
@@ -77,6 +78,7 @@ const FAQ = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

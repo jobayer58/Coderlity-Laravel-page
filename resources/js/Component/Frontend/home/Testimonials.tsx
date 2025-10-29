@@ -14,7 +14,7 @@ import client6 from '../../../../images/frontend/client6.jpeg'
 
 const Testimonials = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    
+
     // Sample data - tumi joto card chao ekhane add korte paro
     const testimonials = [
         {
@@ -79,53 +79,55 @@ const Testimonials = () => {
 
     return (
         <section className='testimonials-section'>
-            <h2 className="timeline-title">Client Testimonials</h2>
-            <p className="timeline-subtitle">
-                Our clients share their success stories and experiences, highlighting our <br /> commitment, quality service, and outstanding project results.
-            </p>
-            
-            {/* Cards */}
-            <div className='testimonials-parent'>
-                {getVisibleCards().map((testimonial, index) => (
-                    <div key={testimonial.id} className='testimonials-card-wrapper'>
-                        <img className='card-round' src={cardRound} alt="" />
-                        <img className='review-dot' src={reviewDot} alt="" />
-                        <img className='review-dot-down' src={reviewDotDown} alt="" />
-                        <div className='testimonials-card'>
-                            <div className='client-img-div'>
-                                <img className='client-img' src={testimonial.img} alt="client-img" />
-                            </div>
-                            <div className='client-inform'>
-                                <div>
-                                    <h6>{testimonial.name}</h6>
-                                    <p>{testimonial.position}</p>
+            <div className='all-section-width'>
+                <h2 className="timeline-title">Client Testimonials</h2>
+                <p className="timeline-subtitle">
+                    Our clients share their success stories and experiences, highlighting our <br /> commitment, quality service, and outstanding project results.
+                </p>
+
+                {/* Cards */}
+                <div className='testimonials-parent'>
+                    {getVisibleCards().map((testimonial, index) => (
+                        <div key={testimonial.id} className='testimonials-card-wrapper'>
+                            <img className='card-round' src={cardRound} alt="" />
+                            <img className='review-dot' src={reviewDot} alt="" />
+                            <img className='review-dot-down' src={reviewDotDown} alt="" />
+                            <div className='testimonials-card'>
+                                <div className='client-img-div'>
+                                    <img className='client-img' src={testimonial.img} alt="client-img" />
                                 </div>
-                                <p className='client-review'>"{testimonial.review}"</p>
+                                <div className='client-inform'>
+                                    <div>
+                                        <h6>{testimonial.name}</h6>
+                                        <p>{testimonial.position}</p>
+                                    </div>
+                                    <p className='client-review'>"{testimonial.review}"</p>
+                                </div>
                             </div>
                         </div>
+                    ))}
+                </div>
+
+                {/* Navigation Arrows */}
+                <div className="arrow-div">
+                    <div className="arrow-icon-div" onClick={prevSlide}>
+                        <IoIosArrowBack className="arrow-icon" />
                     </div>
-                ))}
-            </div>
-
-            {/* Navigation Arrows */}
-            <div className="arrow-div">
-                <div className="arrow-icon-div" onClick={prevSlide}>
-                    <IoIosArrowBack className="arrow-icon" />
+                    <div className="arrow-icon-div" onClick={nextSlide}>
+                        <IoIosArrowForward className="arrow-icon" />
+                    </div>
                 </div>
-                <div className="arrow-icon-div" onClick={nextSlide}>
-                    <IoIosArrowForward className="arrow-icon" />
-                </div>
-            </div>
 
-            {/* Slide Indicators (Optional) */}
-            <div className="slide-indicators">
-                {Array.from({ length: totalSlides }).map((_, index) => (
-                    <div
-                        key={index}
-                        className={`indicator ${index === currentSlide ? 'active' : ''}`}
-                        onClick={() => setCurrentSlide(index)}
-                    ></div>
-                ))}
+                {/* Slide Indicators (Optional) */}
+                <div className="slide-indicators">
+                    {Array.from({ length: totalSlides }).map((_, index) => (
+                        <div
+                            key={index}
+                            className={`indicator ${index === currentSlide ? 'active' : ''}`}
+                            onClick={() => setCurrentSlide(index)}
+                        ></div>
+                    ))}
+                </div>
             </div>
         </section>
     );

@@ -29,15 +29,15 @@ const TechConsulting = () => {
                                 {/* Features */}
                                 <div className="webapp-features">
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" />Digital Transformation Roadmaps
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Digital Transformation Roadmaps
                                         </p>
-                                        <p><IoIosCheckmark className="icon" />System Audit & Optimization</p>
-                                        <p><IoIosCheckmark className="icon" />Software Architecture Review</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />System Audit & Optimization</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Software Architecture Review</p>
                                     </div>
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" />Technical Debt Reduction Plans</p>
-                                        <p><IoIosCheckmark className="icon" />Technology Stack Selection</p>
-                                        <p><IoIosCheckmark className="icon" />Security and Compliance Reviews</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Technical Debt Reduction Plans</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Technology Stack Selection</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Security and Compliance Reviews</p>
                                     </div>
                                 </div>
 

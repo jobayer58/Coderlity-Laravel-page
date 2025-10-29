@@ -1,0 +1,15 @@
+name {
+    color: red;
+}
+:root {
+  --primary-bg-color: #1e90ff;
+  --primary-color: red;
+  --all-section-width: 1350px;
+}
+
+.all-section-width{
+  max-width: var(--all-section-width);
+  margin: auto;
+  padding: 40px 0px;
+}
+

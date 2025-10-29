@@ -27,15 +27,15 @@ const MobileApplication = () => {
                                 {/* Features */}
                                 <div className="webapp-features">
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" /> Native & Cross-Platform Builds
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Native & Cross-Platform Builds
                                         </p>
-                                        <p><IoIosCheckmark className="icon" /> Flawless API & System Integration</p>
-                                        <p><IoIosCheckmark className="icon" /> Intuitive UI/UX Design</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Flawless API & System Integration</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Intuitive UI/UX Design</p>
                                     </div>
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" /> App Store Submission & Guidance</p>
-                                        <p><IoIosCheckmark className="icon" /> Performance-First Architecture</p>
-                                        <p><IoIosCheckmark className="icon" /> Dedicated, Ongoing Support</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> App Store Submission & Guidance</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Performance-First Architecture</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Dedicated, Ongoing Support</p>
                                     </div>
                                 </div>
                                 

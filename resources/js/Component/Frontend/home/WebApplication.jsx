@@ -31,14 +31,14 @@ const WebApplication = () => {
                                 {/* Features */}
                                 <div className="webapp-features">
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" /> Custom-Engineered Solutions</p>
-                                        <p><IoIosCheckmark className="icon" /> Future-Proof Laravel Framework</p>
-                                        <p><IoIosCheckmark className="icon" /> Performance-Driven Applications</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Custom-Engineered Solutions</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Future-Proof Laravel Framework</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Performance-Driven Applications</p>
                                     </div>
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" /> Custom-Engineered Solutions</p>
-                                        <p><IoIosCheckmark className="icon" /> Future-Proof Laravel Framework</p>
-                                        <p><IoIosCheckmark className="icon" /> Performance-Driven Applications</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Custom-Engineered Solutions</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Future-Proof Laravel Framework</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Performance-Driven Applications</p>
                                     </div>
                                 </div>
 

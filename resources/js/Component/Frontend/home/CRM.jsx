@@ -28,15 +28,15 @@ const CRM = () => {
                                 {/* Features */}
                                 <div className="webapp-features">
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" /> Custom Workflow Automation
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Custom Workflow Automation
                                         </p>
-                                        <p><IoIosCheckmark className="icon" /> Cloud-Native & Scalable Architecture</p>
-                                        <p><IoIosCheckmark className="icon" /> Real-Time Reporting & Analytics</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Cloud-Native & Scalable Architecture</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Real-Time Reporting & Analytics</p>
                                     </div>
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" /> Ironclad Data Security & Compliance</p>
-                                        <p><IoIosCheckmark className="icon" /> User-Centric UI/UX Design</p>
-                                        <p><IoIosCheckmark className="icon" /> Dedicated, Ongoing Support</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Ironclad Data Security & Compliance</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> User-Centric UI/UX Design</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Dedicated, Ongoing Support</p>
                                     </div>
                                 </div>
                                                              

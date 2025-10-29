@@ -27,15 +27,15 @@ const DigitalMarketing = () => {
                                 {/* Features */}
                                 <div className="webapp-features">
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" /> Customized Growth Strategy
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Customized Growth Strategy
                                         </p>
-                                        <p><IoIosCheckmark className="icon" /> High-Impact Content & SEO </p>
-                                        <p><IoIosCheckmark className="icon" /> Data-Driven Analytics & Reporting</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> High-Impact Content & SEO </p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Data-Driven Analytics & Reporting</p>
                                     </div>
                                     <div xs={12} sm={6}>
-                                        <p><IoIosCheckmark className="icon" />Full-Funnel Campaign Management</p>
-                                        <p><IoIosCheckmark className="icon" /> Conversion-Focused Web Design</p>
-                                        <p><IoIosCheckmark className="icon" />Dedicated, Ongoing Partnership</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Full-Funnel Campaign Management</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" /> Conversion-Focused Web Design</p>
+                                        <p><IoIosCheckmark className="webapp-features-icon" />Dedicated, Ongoing Partnership</p>
                                     </div>
                                 </div>
 

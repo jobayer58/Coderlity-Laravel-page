@@ -7,13 +7,12 @@
   border-bottom-right-radius: 14px; */
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
+  width: 1350px;
   height: 750px;
-  margin: 0px 80px;
+  margin: auto;
   box-shadow: 
     6px 6px 12px 0px rgba(189, 200, 223, 0.7),
     -6px -6px 12px 0px rgba(255, 255, 255, 0.7);
-
-    
 }
 
 .domain-content-text h1 {

@@ -14,6 +14,7 @@ import { Button, Modal } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import Technologies from "../../Component/Frontend/home/Technologies";
 import Testimonials from "../../Component/Frontend/home/Testimonials";
+import '../../css/Frontend/Global.css';
 
 function Site() {
   const [modalPasswordReset, setModalPasswordReset] = useState<boolean>(false);
@@ -32,7 +33,7 @@ function Site() {
       <Featured />
       <DigitalSolution />
       <ProcessTimeline />
-      {/* <WorkProcess /> */}
+      <WorkProcess />
       <Technologies/>
       <FAQ />
       <Testimonials/>

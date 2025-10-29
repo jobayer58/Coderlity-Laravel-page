@@ -6,7 +6,6 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import massanger from "../../images/frontend/sms.png";
-import { IoMdArrowUp } from "react-icons/io";
 import trustReview from "../../images/frontend/trustreview.png";
 import trustPilot from "../../images/frontend/trustpilot.png";
 import scroll from '../../images/frontend/scrollUp.png'
@@ -17,30 +16,30 @@ import { useEffect, useState } from "react";
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-    // Show button when page is scrolled down
-    const toggleVisibility = () => {
-        if (window.pageYOffset > 300) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
+  // Show button when page is scrolled down
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Scroll to top smoothly
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
     };
-
-    // Scroll to top smoothly
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility);
-
-        return () => {
-            window.removeEventListener('scroll', toggleVisibility);
-        };
-    }, []);
+  }, []);
   return (
     <footer className="codarility-footer">
       <div className="footer-container">

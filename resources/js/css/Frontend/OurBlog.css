@@ -1,7 +1,9 @@
 /* OurBlog.css */
 .blogs-section {
   background-color: #fff;
-  padding: 90px 80px;
+  padding: 50px 0px;
+  padding-bottom: 280px;
+  position: relative;
 }
 
 /* Header Section */
