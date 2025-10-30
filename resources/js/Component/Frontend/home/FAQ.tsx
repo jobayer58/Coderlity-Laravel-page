@@ -43,11 +43,11 @@ const FAQ = () => {
         <div className="faq-parent">
         <div className="faq-text-div">
           <div>
-            <h1 className="blogs-title">
+            <h1 className="landing-page-all-title">
               Freequently <br />
               asked Questions
             </h1>
-            <p className="blogs-subtitle">
+            <p className="landing-page-all-description">
               Have questions about our services, process, or pricing? Our FAQ{" "}
               <br className="br" /> section is here to provide clear answers and
               help you better <br className="br" /> understand how Coderlity can

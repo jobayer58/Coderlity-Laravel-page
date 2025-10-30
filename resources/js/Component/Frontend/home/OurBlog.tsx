@@ -13,8 +13,8 @@ const OurBlog = () => {
         {/* Header */}
         <div className="blogs-header">
           <div>
-            <h2 className="blogs-title">Our Blog</h2>
-            <p className="blogs-subtitle">
+            <h2 className="landing-page-all-title">Our Blog</h2>
+            <p className="landing-page-all-description">
               Discover articles and tutorials to help you build better
             </p>
           </div>
@@ -38,7 +38,7 @@ const OurBlog = () => {
         <div className="blogs-grid">
           {/* Card 1 */}
           <div className="blog-card">
-            <img src={blog1} alt="Blog post" />
+            <img src={blog1} alt="Blog post image" />
             <div className="blog-card-content">
               <span className="blog-date">01.10.2025</span>
               <h5 className="blog-card-title">Mastering UI/UX Design</h5>
@@ -53,7 +53,7 @@ const OurBlog = () => {
 
           {/* Card 2 */}
           <div className="blog-card">
-            <img src={blog2} alt="Blog post" />
+            <img src={blog2} alt="Blog post image" />
             <div className="blog-card-content">
               <span className="blog-date">05.10.2025</span>
               <h5 className="blog-card-title">
@@ -70,7 +70,7 @@ const OurBlog = () => {
 
           {/* Card 3 */}
           <div className="blog-card">
-            <img src={blog3} alt="Blog post" />
+            <img src={blog3} alt="Blog post image" />
             <div className="blog-card-content">
               <span className="blog-date">10.10.2025</span>
               <h5 className="blog-card-title">
@@ -87,7 +87,7 @@ const OurBlog = () => {
 
           {/* Card 4 */}
           <div className="blog-card">
-            <img src={blog4} alt="Blog post" />
+            <img src={blog4} alt="Blog post image" />
             <div className="blog-card-content">
               <span className="blog-date">15.10.2025</span>
               <h5 className="blog-card-title">

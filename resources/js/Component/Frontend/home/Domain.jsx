@@ -19,7 +19,7 @@ const Domain = () => {
                         <button className="search-btn">Search Domain</button>
                     </div>
                     <div className="search-left-text">
-                        <img src={iconSearch} alt="" />
+                        <img src={iconSearch} alt="icon" />
                         <p>Generate with AI</p>
                     </div>
                 </div>

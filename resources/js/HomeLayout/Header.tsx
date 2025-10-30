@@ -603,20 +603,34 @@ const Header = () => {
     );
   };
 
+  // navbar scroll effect
   const [scrolled, setScrolled] = useState(false);
+const [navbarFixed, setNavbarFixed] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    
+    // 400px এর নিচে গেলে নেভবার fixed হবে এবং animation সহ নেমে আসবে
+    if (currentScrollY > 400) {
+      setNavbarFixed(true);
+    } 
+    // 400px এর উপরে গেলে নেভবার আবার static হবে
+    else {
+      setNavbarFixed(false);
+    }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    // Scrolled state for styling
+    if (currentScrollY > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
 
   // typing text banner
   const texts = ["Web Development", "Mobile Application", "ERP Solution" , "CRM Solution","UI/UX","Digital marketing", "Tech consultation"];
@@ -653,10 +667,10 @@ const Header = () => {
       <Navbar
         expand="lg"
         variant="light"
-        className={`main-navbar ${scrolled ? "navbar-scrolled" : ""}`}
+        className={`main-navbar ${scrolled ? "navbar-scrolled" : ""} ${navbarFixed ? "navbar-fixed" : "navbar-static"}`}
       >
         <Navbar.Brand href="#">
-          <img className="logoImg" src={logo} alt="Logo" />
+          <img className="logo-img" src={logo} alt="Company Logo" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -821,7 +835,7 @@ const Header = () => {
             </Col>
             <Col>
               <div className="dark-mode">
-                <img src={moon} alt="" />
+                <img  className="dark-icon-img" src={moon} alt="Dark mode icon" />
               </div>
             </Col>
           </Row>
@@ -853,8 +867,8 @@ const Header = () => {
             </div>
 
             <InputGroup className="inputImg">
-              <img src={banner2} alt="" />
-              <img src={banner1} alt="" />
+              <img className="sponsored-img" src={banner2} alt="sponsored logo" />
+              <img className="sponsored-img" src={banner1} alt="sponsored logo" />
             </InputGroup>
 
             {/* user calculation */}
@@ -878,50 +892,46 @@ const Header = () => {
             </div>
           </div>
           {/* right side */}
-          {/* <div>
-                        <img src={group} alt="" />
-                    </div> */}
-
           <div className="circle-container">
             <div className="center-image">
-              <img src={dev} alt="center" />
+              <img src={dev} alt="icon" />
             </div>
 
             <div className="rotating-circle">
               <div className="icon">
-                <img src={icon1} alt="" />
+                <img src={icon1} alt="Logo Icon" />
               </div>
               <div className="icon">
-                <img src={icon2} alt="" />
+                <img src={icon2} alt="Logo Icon" />
               </div>
               <div className="icon">
-                <img src={icon3} alt="" />
+                <img src={icon3} alt="Logo Icon" />
               </div>
               <div className="icon">
-                <img src={icon4} alt="" />
+                <img src={icon4} alt="Logo Icon" />
               </div>
               <div className="icon">
-                <img src={icon5} alt="" />
+                <img src={icon5} alt="Logo Icon" />
               </div>
               <div className="icon">
-                <img src={icon6} alt="" />
+                <img src={icon6} alt="Logo Icon" />
               </div>
               <div className="icon">
-                <img src={icon7} alt="" />
+                <img src={icon7} alt="Logo Icon" />
               </div>
               <div className="icon">
-                <img src={icon8} alt="" />
+                <img src={icon8} alt="Logo Icon" />
               </div>
               <div className="icon">
-                <img src={icon9} alt="" />
+                <img src={icon9} alt="Logo Icon" />
               </div>
             </div>
           </div>
         </div>
         <div className='scrollDown-div'>
-          <img src={scroll} alt="" />
+          <img src={scroll} alt="Scroll Shape" />
           <div className='scrollIcon-div'>
-            <img src={scrollIcon} alt="" />
+            <img src={scrollIcon} alt="scroll Icon" />
             <p className='scroll-text'>Scroll Down</p>
           </div>
         </div>

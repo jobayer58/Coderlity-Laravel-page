@@ -1,7 +1,7 @@
 
 import { Button, Col } from 'react-bootstrap';
 import { IoIosCheckmark } from 'react-icons/io';
-import CRMImage from '../../../../images/frontend/CRM.png'
+import ERMImage from '../../../../images/frontend/erm.png'
 
 const CRM = () => {
     return (
@@ -15,7 +15,7 @@ const CRM = () => {
                         <div className="webapp-parent-row">
                             {/* Left Image */}
                             <Col md={6} className="webapp-image-col">
-                                <img src={CRMImage} alt="Web Application" className="webapp-image" />
+                                <img src={ERMImage} alt="ERM Image" className="webapp-image" />
                             </Col>
 
                             {/* Right Content */}

@@ -80,8 +80,8 @@ const Testimonials = () => {
     return (
         <section className='testimonials-section'>
             <div className='all-section-width'>
-                <h2 className="timeline-title">Client Testimonials</h2>
-                <p className="timeline-subtitle">
+                <h2 className="landing-page-all-title">Client Testimonials</h2>
+                <p className="landing-page-all-description">
                     Our clients share their success stories and experiences, highlighting our <br /> commitment, quality service, and outstanding project results.
                 </p>
 
@@ -89,9 +89,9 @@ const Testimonials = () => {
                 <div className='testimonials-parent'>
                     {getVisibleCards().map((testimonial, index) => (
                         <div key={testimonial.id} className='testimonials-card-wrapper'>
-                            <img className='card-round' src={cardRound} alt="" />
-                            <img className='review-dot' src={reviewDot} alt="" />
-                            <img className='review-dot-down' src={reviewDotDown} alt="" />
+                            <img className='card-round' src={cardRound} alt="card Round shape" />
+                            <img className='review-dot' src={reviewDot} alt="icon dot up" />
+                            <img className='review-dot-down' src={reviewDotDown} alt="icon dot down" />
                             <div className='testimonials-card'>
                                 <div className='client-img-div'>
                                     <img className='client-img' src={testimonial.img} alt="client-img" />

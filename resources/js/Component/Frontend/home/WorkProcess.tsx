@@ -10,8 +10,8 @@ const WorkProcess = () => {
     return (
         <section className="work-process-section">
             <div className='all-section-width'>
-                <h2 className="timeline-title">Our Effective Work Process</h2>
-                <p className="timeline-subtitle">
+                <h2 className="landing-page-all-title ">Our Effective Work Process</h2>
+                <p className="landing-page-all-description">
                     We follow a streamlined approach to ensure your project is delivered with the highest quality and <br /> efficiency. From initial consultation and requirement gathering to development, testing, and <br /> deployment, our work process is designed to maintain clear communication, meet deadlines, and <br /> exceed expectations.
                 </p>
                 {/* work process */}
@@ -19,8 +19,8 @@ const WorkProcess = () => {
                     {/* discuss */}
                     <div className='work-process-div'>
                         <div className='work-img-div'>
-                            <img className='work-Shape-img' src={workShape} alt="" />
-                            <img className='work-icon' src={workIcon1} alt="" />
+                            <img className='work-Shape-img' src={workShape} alt="Work shape image" />
+                            <img className='work-icon' src={workIcon1} alt="Icon Image" />
                         </div>
                         <h5>Discuss</h5>
                         <p>We start by engaging in open conversations to understand your goals and expectations.</p>
@@ -28,8 +28,8 @@ const WorkProcess = () => {
                     {/* Deal */}
                     <div className='work-process-div'>
                         <div className='work-img-div'>
-                            <img className='work-Shape-img' src={workShape} alt="" />
-                            <img className='work-icon' src={workIcon2} alt="" />
+                            <img className='work-Shape-img' src={workShape} alt="Work shape image" />
+                            <img className='work-icon' src={workIcon2} alt="Icon Image" />
                         </div>
                         <h5>Deal</h5>
                         <p>After analyzing your needs, we craft transparent proposals that align with your budget.</p>
@@ -37,8 +37,8 @@ const WorkProcess = () => {
                     {/* Develop */}
                     <div className='work-process-div'>
                         <div className='work-img-div'>
-                            <img className='work-Shape-img' src={workShape} alt="" />
-                            <img className='work-icon' src={workIcon3} alt="" />
+                            <img className='work-Shape-img' src={workShape}  alt="Work shape image" />
+                            <img className='work-icon' src={workIcon3} alt="Icon Image" />
                         </div>
                         <h5>Develop</h5>
                         <p>Our team uses technical expertise to create solutions tailored to your requirements.</p>
@@ -46,8 +46,8 @@ const WorkProcess = () => {
                     {/* Delivery */}
                     <div className='work-process-div'>
                         <div className='work-img-div'>
-                            <img className='work-Shape-img' src={workShape} alt="" />
-                            <img className='work-icon' src={workIcon4} alt="" />
+                            <img className='work-Shape-img' src={workShape}  alt="Work shape image" />
+                            <img className='work-icon' src={workIcon4} alt="Icon Image" />
                         </div>
                         <h5>Delivery</h5>
                         <p>With meticulous attention to detail, we ensure timely delivery while exceeding your expectations.</p>

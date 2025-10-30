@@ -19,14 +19,12 @@ import javascript from '../../../../images/frontend/javascript.png'
 import foday from '../../../../images/frontend/simple-icons_elementor.png'
 import WPBakery from '../../../../images/frontend/WPBakery.png'
 
-
-
 const Technologies = () => {
     return (
         <section className='technologies-section'>
             <div className='all-section-width'>
-                <h2 className="timeline-title">Technologies we work With</h2>
-            <p className="timeline-subtitle">
+                <h2 className="landing-page-all-title">Technologies we work With</h2>
+            <p className="landing-page-all-description">
                 At our company, we work with the latest technologies to deliver innovative, secure, and high- <br /> performing solutions. Our expertise includes web, mobile, cloud, AI, and blockchain development for <br /> modern businesses.
             </p>
             <div className='technologies-parent'>

@@ -3,6 +3,8 @@
   z-index: 2;
   padding: 0px 80px;
   bottom: 720px;
+  width: calc(100% );
+
 }
 
 .meet-div {
@@ -13,7 +15,6 @@
   border-radius: 30px;
   gap: 20px;
   background: #C0E1FF;
-  /* padding: 40px 60px; */
   width: 1350px;
   margin: auto;
 }

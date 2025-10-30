@@ -59,7 +59,7 @@ const DigitalSolution = () => {
         <div className="solution-parent">
         <div className="solution-img-div">
           <div>
-            <img src={digital} alt="" />
+            <img src={digital} alt="Digital solution Image" />
           </div>
           <div>
             <h1>
@@ -67,10 +67,10 @@ const DigitalSolution = () => {
             </h1>
             <p>
               We provide a complete suite of services that covers web
-              development, app development, UI <br className="solution-br" />
-              /UX design, API integration (including e-invoicing ZATCA
-              integration), digital marketing, IT <br className="solution-br" />{" "}
-              consultation, and domain hosting, ensuring all your digital needs
+              development, app <br className="solution-br" /> development, UI 
+              /UX design, API integration (including e-invoicing ZATCA <br className="solution-br" />
+              integration), digital marketing, IT 
+              consultation, and domain hosting, ensuring all <br className="solution-br" /> your digital needs
               are met under one roof.
             </p>
           </div>

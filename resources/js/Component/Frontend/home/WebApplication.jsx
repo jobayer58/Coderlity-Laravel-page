@@ -1,6 +1,6 @@
 import './WebApplication.css'
 import { Button, Col  } from 'react-bootstrap';
-import webAppImage from '../../../../images/frontend/kindpng_6210556.png'
+import webAppImage from '../../../../images/frontend/web-application.png'
 import { IoIosCheckmark} from 'react-icons/io';
 
 const WebApplication = () => {
@@ -14,7 +14,7 @@ const WebApplication = () => {
                         <div className="webapp-parent-row">
                             {/* Left Image */}
                             <Col md={6} className="webapp-image-col">
-                                <img src={webAppImage} alt="Web Application" className="webapp-image" />
+                                <img src={webAppImage} alt="Web Application image" className="webapp-image" />
                             </Col>
 
                             {/* Right Content */}

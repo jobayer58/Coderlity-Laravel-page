@@ -16,7 +16,7 @@ const TechConsulting = () => {
                         <div className="webapp-parent-row">
                             {/* Left Image */}
                             <Col md={6} className="webapp-image-col">
-                                <img src={tech} alt="Web Application" className="webapp-image" />
+                                <img src={tech} alt="Tech Consulting image" className="webapp-image" />
                             </Col>
 
                             {/* Right Content */}

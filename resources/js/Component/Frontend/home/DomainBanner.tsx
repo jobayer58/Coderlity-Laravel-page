@@ -115,7 +115,7 @@ const DomainBanner = () => {
             <div className="icon-div">
               <MdDomain className="domain-icon" />
             </div>
-            <p className="icon-text">ERP Solution</p>
+            <p className="icon-text">ERM Solution</p>
           </div>
 
           {/* Digital Marketing */}

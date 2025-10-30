@@ -1,4 +1,4 @@
-import mobileImage from '../../../../images/frontend/mobile.png'
+import mobileImage from '../../../../images/frontend/mobile-application.png'
 import { Button, Col } from 'react-bootstrap';
 import { IoIosCheckmark } from 'react-icons/io';
 
@@ -13,7 +13,7 @@ const MobileApplication = () => {
                         <div className="webapp-parent-row">
                             {/* Left Image */}
                             <Col md={6} className="webapp-image-col">
-                                <img src={mobileImage} alt="Web Application" className="webapp-image" />
+                                <img src={mobileImage} alt="mobile Application image" className="webapp-image" />
                             </Col>
 
                             {/* Right Content */}

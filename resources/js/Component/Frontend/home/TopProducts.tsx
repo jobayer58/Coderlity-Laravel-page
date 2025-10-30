@@ -12,8 +12,8 @@ const TopProducts = () => {
       <div className="all-section-width">
         {/* text section */}
         <div className="text-div">
-          <h1 className="product-title-text">Our Top Products</h1>
-          <p className="product-description">
+          <h1 className="landing-page-all-title">Our Top Products</h1>
+          <p className="landing-page-all-description">
             We offer a range of high-quality digital products, including PHP
             Laravel frameworks, HTML React JS{" "}
             <br className="product-description-br" />
@@ -28,7 +28,7 @@ const TopProducts = () => {
           <div className="card-wrapper">
             <Card className="product-card">
               <div className="card-image-container">
-                <Card.Img variant="top" src={image1} />
+                <Card.Img variant="top" src={image1} alt="Product Image" />
                 <div className="version-badge version-bg-color1">
                   Version <span className="span-badge-text">3.2</span>
                 </div>
@@ -62,7 +62,7 @@ const TopProducts = () => {
           <div className="card-wrapper">
             <Card className="product-card">
               <div className="card-image-container">
-                <Card.Img variant="top" src={image3} />
+                <Card.Img variant="top" src={image3} alt="Product Image" />
                 <div className="version-badge version-bg-color2">
                   Version <span className="span-badge-text">3.1</span>
                 </div>
@@ -96,7 +96,7 @@ const TopProducts = () => {
           <div className="card-wrapper">
             <Card className="product-card">
               <div className="card-image-container">
-                <Card.Img variant="top" src={image2} />
+                <Card.Img variant="top" src={image2} alt="Product Image" />
                 <div className="version-badge version-bg-color3">
                   Version <span className="span-badge-text">5.6</span>
                 </div>
@@ -130,7 +130,7 @@ const TopProducts = () => {
           <div className="card-wrapper">
             <Card className="product-card">
               <div className="card-image-container">
-                <Card.Img variant="top" src={image2} />
+                <Card.Img variant="top" src={image2} alt="Product Image" />
                 <div className="version-badge version-bg-color3">
                   Version <span className="span-badge-text">5.6</span>
                 </div>

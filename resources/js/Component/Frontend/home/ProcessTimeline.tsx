@@ -14,8 +14,8 @@ const ProcessTimeline = () => {
   return (
     <section className="timeline-section">
       <div className="all-section-width">
-        <h2 className="timeline-title">From Idea Generation To Success</h2>
-        <p className="timeline-subtitle">
+        <h2 className="landing-page-all-title">From Idea Generation To Success</h2>
+        <p className="landing-page-all-description">
           Experience our systematic approach to digital excellence. We meticulously guide you through every <br /> phase, ensuring  a seamless and successful transformation of your vision into reality.
         </p>
         {/* <div className="idea-div">
@@ -24,7 +24,7 @@ const ProcessTimeline = () => {
         {/* idea process */}
         <div className="work-step-container">
           <div className="idea-div">
-            <img src={waveShape} alt="" />
+            <img src={waveShape} alt="wave shape image" />
           </div>
           {/* idea1 */}
           <div className="work-step">

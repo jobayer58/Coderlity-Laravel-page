@@ -1,4 +1,4 @@
-import uxDesign from '../../../../images/frontend/ui.png'
+import uxDesign from '../../../../images/frontend/ux.png'
 import { Button, Col } from 'react-bootstrap';
 import { IoIosCheckmark } from 'react-icons/io';
 
@@ -14,7 +14,7 @@ const UXDesign = () => {
                         <div className="webapp-parent-row">
                             {/* Left Image */}
                             <Col md={6} className="webapp-image-col">
-                                <img src={uxDesign} alt="Web Application" className="webapp-image" />
+                                <img src={uxDesign} alt="UI/UX Image" className="webapp-image" />
                             </Col>
 
                             {/* Right Content */}

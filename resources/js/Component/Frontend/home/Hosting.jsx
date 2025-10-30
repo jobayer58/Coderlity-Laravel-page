@@ -62,7 +62,7 @@ const Hosting = () => {
                     <div className="pricing-divider"></div>
                     <h2 className="pricing-price">{plan.price}</h2>
                     <p className="pricing-subtitle">{plan.subtitle}</p>
-                    <Button variant="primary" className="pricing-btn">
+                    <Button className="Started-btn">
                       Get Started
                     </Button>
                     <ul className="pricing-list">

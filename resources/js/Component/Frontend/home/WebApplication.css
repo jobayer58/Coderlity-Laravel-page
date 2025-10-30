@@ -1,31 +1,23 @@
-.webapp-parent-row{
+.webapp-parent-row {
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
     gap: 80px;
     padding: 0px 90px;
 }
+
 .webapp-image-col {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 444px ;
-    height: 444px ;
+    width: 444px;
+    height: 444px;
     object-fit: cover;
 }
 
-.webapp-image {
-    
-    /* border: 1px solid red; */
-}
-
-.webapp-content {
-    /* padding-right: 30px; */
-    /* border: 1px solid red; */
-}
-
 .webapp-title {
+    color: var(--title-font-color);
     text-align: start;
     font-size: 43px;
     font-weight: 700;
@@ -44,7 +36,8 @@
     color: #54AFFF;
     font-weight: 600;
 }
-.webapp-features{
+
+.webapp-features {
     display: flex;
     gap: 14px;
 }
@@ -73,23 +66,27 @@
 }
 
 .start-btn {
-    background-color: #0088FF;
+    background-color: #1E6FFF;
     border: none;
     border-radius: 12px;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: 400;
-    box-shadow: 
-    0px 4px 4px 0px rgba(0, 0, 0, 0.25),
-    inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+        inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .start-btn:hover {
-    background-color: #0056b3;
+    color: var(--title-font-color);
+    background-color: #E9EAF0;
+    box-shadow:
+        6px 6px 12px 0px rgba(189, 200, 223, 0.7),
+        -6px -6px 12px 0px rgba(255, 255, 255, 0.7);
 }
 
 .case-btn {
-    color: #0F1724;
+    color: var(--title-font-color);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 12px;
@@ -97,13 +94,17 @@
     font-weight: 400;
     margin-left: 15px;
     background-color: #E9EAF0;
-    box-shadow: 
-    6px 6px 12px 0px rgba(189, 200, 223, 0.7),
-    -6px -6px 12px 0px rgba(255, 255, 255, 0.7);
+    box-shadow:
+        6px 6px 12px 0px rgba(189, 200, 223, 0.7),
+        -6px -6px 12px 0px rgba(255, 255, 255, 0.7);
 }
 
 .case-btn:hover {
-    text-decoration: underline;
+    color: white;
+    background: #1E6FFF;
+    box-shadow:
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+        inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .webapp-features p {
@@ -201,7 +202,7 @@
         display: flex;
         text-align: start;
         font-size: 10px;
-        
+
     }
 
     .start-btn {

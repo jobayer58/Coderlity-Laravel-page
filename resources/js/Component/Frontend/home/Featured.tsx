@@ -9,8 +9,8 @@ const Featured = () => {
     <section className="featured-section">
       <div className="all-section-width">
         <div className="featured-text">
-          <h1 className="featured-text-title">Featured Items</h1>
-          <p>
+          <h1 className="landing-page-all-title">Featured Items</h1>
+          <p className="landing-page-all-description">
             We offer a range of high-quality digital products, including PHP
             Laravel frameworks, HTML React JS <br /> front-end templates, and MERN
             projects, designed to meet the needs of modern web development.
@@ -20,7 +20,7 @@ const Featured = () => {
           {/* card 1 */}
           <div className="featured-card-div1">
             <div className="featured-img">
-              <img src={UXImage} className="img" alt="" />
+              <img src={UXImage} className="img" alt="UI/UX Image" />
             </div>
             <div className="featured-content-text">
               <h1>UI/UX Design</h1>
@@ -33,7 +33,7 @@ const Featured = () => {
           {/* card 2 */}
           <div className="featured-card-div2">
             <div className="featured-img">
-              <img src={hostingImage} className="img" alt="" />
+              <img src={hostingImage} className="img" alt="Hosting Image" />
             </div>
             <div className="featured-content-text">
               <h1>Domain Hosting</h1>
@@ -46,7 +46,7 @@ const Featured = () => {
           {/* card 3 */}
           <div className="featured-card-div3">
             <div className="featured-img">
-              <img src={webImage} className="img" alt="" />
+              <img src={webImage} className="img" alt="web Image" />
             </div>
             <div className="featured-content-text">
               <h1>Web / App Developing</h1>
@@ -59,7 +59,7 @@ const Featured = () => {
           {/* card 1 */}
           <div className="featured-card-div4">
             <div className="featured-img">
-              <img src={marketingImage} className="img" alt="" />
+              <img src={marketingImage} className="img" alt="marketing image" />
             </div>
             <div className="featured-content-text">
               <h1>Digital Marketing</h1>

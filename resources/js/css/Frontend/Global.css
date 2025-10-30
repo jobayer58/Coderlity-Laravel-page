@@ -5,6 +5,9 @@ name {
   --primary-bg-color: #1e90ff;
   --primary-color: red;
   --all-section-width: 1350px;
+  --title-font-color: #0F1724;
+  --description-font-color: #6F7274;
+  
 }
 
 .all-section-width{
@@ -13,3 +16,57 @@ name {
   padding: 40px 0px;
 }
 
+.landing-page-all-title {
+  font-size: 60px;
+  font-weight: 500;
+  /* text-align: center; */
+  margin-bottom: 0px;
+  color: var(--title-font-color);
+  position: relative;
+  display: inline-block;
+}
+
+.landing-page-all-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px;
+  border-radius: 50px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(30, 111, 255, 0.3) 25%,
+    rgba(30, 111, 255, 1) 50%,
+    rgba(30, 111, 255, 0.3) 75%,
+    transparent 100%
+  );
+  animation: flowFromSides 6s ease-in-out infinite;
+}
+
+/* smooth from both sides to center */
+@keyframes flowFromSides {
+  0% {
+    width: 0%;
+    opacity: 0.3;
+  }
+
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 0%;
+    opacity: 0.3;
+  }
+}
+
+.landing-page-all-description {
+    margin-top: 40px;
+    color: var(--description-font-color);
+    font-weight: 400;
+    font-size: 16px;
+}

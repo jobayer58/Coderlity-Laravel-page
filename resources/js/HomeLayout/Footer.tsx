@@ -1,11 +1,11 @@
 import "../css/Frontend/Footer.css";
-import logo from "../../images/frontend/footer-logo.png";
+import logo from "../../images/frontend/footer-logo2.png";
 import {
   FaFacebook,
   FaGithub,
   FaYoutube,
 } from "react-icons/fa";
-import massanger from "../../images/frontend/sms.png";
+import messenger from "../../images/frontend/sms.png";
 import trustReview from "../../images/frontend/trustreview.png";
 import trustPilot from "../../images/frontend/trustpilot.png";
 import scroll from '../../images/frontend/scrollUp.png'
@@ -48,7 +48,7 @@ const Footer = () => {
           {/* Company Description */}
           <div className="footer-section description-section">
             <div>
-              <img src={logo} alt="" />
+              <img src={logo} alt="footer logo" />
               <p className="company-description">
                 Ignite digital success with our 360-Degree solution. <br /> We provide
                 everything from concept to design and <br /> development, domain and
@@ -84,7 +84,7 @@ const Footer = () => {
                   href="https://trustreview.net/businesses/coderlity"
                   target="_blank"
                 >
-                  <img src={trustReview} alt="" />
+                  <img src={trustReview} alt="Trust Review Image" />
                 </a>
               </div>
               <div>
@@ -92,7 +92,7 @@ const Footer = () => {
                   href="https://www.trustpilot.com/review/coderlity.com"
                   target="_blank"
                 >
-                  <img src={trustPilot} alt="" />
+                  <img src={trustPilot} alt="Trust Pilot image" />
                 </a>
               </div>
             </div>
@@ -325,7 +325,7 @@ const Footer = () => {
             {/* 3 */}
             <div className="footer-social-sms">
               <div className="sms-div">
-                <img src={massanger} alt="" />
+                <img src={messenger} alt="Messenger image" />
               </div>
             </div>
           </div>

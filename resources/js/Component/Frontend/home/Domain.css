@@ -16,13 +16,14 @@
 }
 
 .domain-content-text h1 {
+  color: var(--title-font-color);
   font-size: 54px;
   font-weight: 700;
 }
 
 .domain-content-text p {
   font-size: 18px;
-  color: #777C82;
+  color: var(--description-font-color);
   font-weight: 400;
 }
 

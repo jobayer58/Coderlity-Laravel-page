@@ -1,5 +1,5 @@
 
-import digital from '../../../../images/frontend/digital.png'
+import digital from '../../../../images/frontend/digital-marketing.png'
 import { Button, Col } from 'react-bootstrap';
 import { IoIosCheckmark } from 'react-icons/io';
 
@@ -14,7 +14,7 @@ const DigitalMarketing = () => {
                         <div className="webapp-parent-row">
                             {/* Left Image */}
                             <Col md={6} className="webapp-image-col">
-                                <img src={digital} alt="Web Application" className="webapp-image" />
+                                <img src={digital} alt="Digital Marketing image" className="webapp-image" />
                             </Col>
 
                             {/* Right Content */}
